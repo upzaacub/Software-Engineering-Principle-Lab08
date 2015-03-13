@@ -29,6 +29,23 @@ class Simple_drawing_window(QtGui.QWidget):
 
         p.drawImage(QtCore.QRect(200, 100, 320, 320), self.rabbit)
 
+
+class Simple_drawing_window3(QtGui.QWidget):
+    def __init__(self):
+        QtGui.QWidget.__init__(self, None)
+        self.setWindowTitle("Simple Drawing")
+        self.rabbit = QtGui.QImage("images/rabbit.png")
+
+    def paintEvent(self, e):
+        p = QtGui.QPainter()
+        p.begin(self)
+
+        p.drawPolygon([
+            QtCore.QPoint(50, 200), QtCore.QPoint(150, 200), QtCore.QPoint(100, 400),
+        ])
+
+        p.drawImage(QtCore.QRect(200, 100, 320, 320), self.rabbit)
+
     
 
 if __name__ == '__main__':
