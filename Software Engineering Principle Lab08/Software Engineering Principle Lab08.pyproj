@@ -27,6 +27,9 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="N3 Up.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="N3.py">
       <SubType>Code</SubType>
     </Compile>
@@ -36,7 +39,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="form.ui" />
+    <Content Include="form2.ui" />
+    <Content Include="form3.ui" />
   </ItemGroup>
   <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
   <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
