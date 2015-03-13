@@ -112,8 +112,7 @@ class Hanoi(object):
 #h.solve()
 
 from turtle import *
-
-N = 5
+N = 3
 
 class Disc(Turtle):
     def __init__(self, n):
@@ -167,4 +166,5 @@ if __name__=="__main__":
     msg = main()
     print(msg)
     mainloop()
+
 
