@@ -27,6 +27,9 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="N4.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="N3.py">
       <SubType>Code</SubType>
     </Compile>
